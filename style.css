@@ -1,0 +1,195 @@
+@font-face {
+    font-family: SuisseIntl;
+    src: url(fonts/SuisseIntl-Medium.otf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+a,
+p,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: url(pictures/body_background.jpg) no-repeat center;
+    background-size: cover;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.header__button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-family: SuisseIntl;
+    font-size: 16px;
+    font-weight: 400;
+    color: #070809;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.header__button:hover {
+    background-color: rgba(0, 0, 0, 10%);
+}
+
+.english__caption {
+    margin: 20px;
+}
+
+#engword {
+    display: block;
+    width: 70%;
+    margin: 40px auto 0;
+    padding: 5px;
+    border: 2px solid #9b9ec4;
+    border-radius: 10px;
+    text-align: center;
+    background: #cce6e6;
+    outline: none;
+}
+
+#rusword {
+    display: block;
+    width: 70%;
+    margin: 20px auto 0;
+    padding: 5px;
+    border: 2px solid #9b9ec4;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    background: #cce6e6;
+    outline: none;
+}
+
+#check {
+    width: 100px;
+    height: 30px;
+    background-color:#0059ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    font-size: 14px;
+}
+
+#check:hover {
+    background-color: #004ad3; 
+}
+
+#check:active {
+    background-color: #0040b6;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+}
+
+#scope {
+    text-align: center;
+}
+
+#right {
+    color: green;
+}
+
+#wrong {
+    color: red;
+}
+
+#percent {
+    text-align: center;
+}
+
+.regform {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.regform input {
+    width: 300px;
+    margin: 10px;
+    padding: 3px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.regform input:first-child {
+    margin-top: 25px;
+}
+
+.regform input:last-child {
+    margin-bottom: 26px;
+}
+
+.footer {
+    background-color: #f3f3f3;
+    margin-top: auto;
+}
+
+.footer__item {
+    padding: 30px;
+}
+
+@media(max-width: 500px) {
+    body {
+        min-height: 90vh;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #scope {
+      font-size: 22px;  
+    }
+
+    #engword {
+        width: 90%;
+    }
+
+    #rusword {
+        width: 90%;
+        font-size: 25px;
+    }
+}
