@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -9,25 +9,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="JS/script.js" defer></script>
+    <script src="JS/registration.js" defer></script>
 </head>
 
 <body>
     <header class="header">
+        <a href="index.html" class="header__button">На главную</a>
         <button class="header__button">Войти</button>
-        <button class="header__button">Зарегистрироваться</button>
+        <button id="logonbtn" class="header__button">Зарегистрироваться</button>
     </header>
     
-    <main>
+    <main id="main">
         <h1 class="english__caption">Английские слова</h1>
         <p id="scope"></p>
         <p id="engword"></p>
         <input id="rusword" autofocus type="text">
-        <button id="check">CHECK</button>
+        <button id="check" class="button">Проверить</button>
         <p>правильных ответов: <span id="right"></span></p>
         <p>неправильных ответов: <span id="wrong"></span></p>
         <p id="percent"></p>
-        <p id="id"></p>
     </main>
 
     <footer class="footer">
@@ -36,19 +37,21 @@
         </p>
     </footer>
     
-    <!-- <form action="registration.php" method="post" class="regform">
-        <input type="text" placeholder="login" name="login">
-        <input type="text" placeholder="password" name="pass">
-        <input type="text" placeholder="repeat password" name="repeatpass">
-        <input type="text" placeholder="email" name="email">
-        <button type="submit">Зарегистрироваться</button>
+    <form id="regform"  class="regform">
+        <input id="login" type="text" placeholder="login" name="login">
+        <input id="password" type="text" placeholder="password" name="pass">
+        <input id="repeatpass" type="text" placeholder="repeat password" name="repeatpass">
+        <input id="email" type="text" placeholder="email" name="email">
+        <button id="regbtn" class="button"  type="submit">Зарегистрироваться</button>
     </form>
     
-    <form action="login.php" method="post">
+    <!-- <form action="login.php" method="post">
         <input type="text" placeholder="login" name="login">
         <input type="text" placeholder="password" name="pass">
         <button type="submit">Войти</button>
     </form> -->
 </body>
+
+
 
 </html>

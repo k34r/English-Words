@@ -12,11 +12,12 @@ if(empty($login) || empty($pass) || empty($repeatpass) || empty($email)){
     if($pass != $repeatpass){
         echo 'Пароли не совпадают';
     } else {
-        $sql = "INSERT INTO `users` (login,password,email) VALUES ('$login','$pass','$email')";
-        if ($conn -> query($sql) === TRUE){
+        $sql = "INSERT INTO g92311gz_k34r.users (login,password,email) VALUES ('$login','$pass','$email')";
+        if ($pdo -> query($sql)) {
             echo 'Регистрация прошла успешкно';
+            // header('Location: '.'index.html');
         } else {
-            echo 'Ошибка:' . $conn->error;
+            echo 'Ошибка:' . $pdo->error;
         }
     }
 }
